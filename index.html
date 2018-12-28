@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- materialize for icon usage -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+    <!-- aditional stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ParkHopper</title>
+</head>
+
+<body>
+
+  
+    <!-- header: contains drop down for state selection-->
+    <header>
+         
+        <nav>
+            <div class="nav-wrapper" id="nav-bar">
+                <a href="#" id="np_brand" class="brand-logo center"><img   class="brand"src="assets/images/small1.jpg"></a>
+              <!-- droppdown trigger -->
+                <div class="container">
+                    <div class="row">
+                      <div class=" col sm6 m8 l12">
+                        <a href="#!" class="dropdown-button btn" data-activates="mydropdown" id="dropdown-btn">States</a>
+                      </div>
+                    </div>
+                  </div>
+                <!-- dropdown contents -->
+                  <ul class="dropdown-content" id="mydropdown">
+                    <!-- list items created dynamically -->
+                  </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- main -->
+    <main>
+
+    <section >
+     <div class="col sm3" id="park-cards">
+     </div>
+    </section>
+    <section >
+      <div class="col sm6" id="middle">
+        <div id="map"></div>
+        <div id="info-weather"></div>
+      </div> 
+     </section>
+     <section >
+      <!-- <div class="col sm3" id="right">right content, will scroll when elements are added exceeding height
+          will be dynamically generated from json data
+      </div>  -->
+     </section>
+
+</main>
+
+    <!-- footer -->
+
+    
+    <footer class="page-footer" id="footer">
+            <div class="footer-copyright">
+              <div class="container">
+              from //forwardSlash 2018
+              </div>
+            </div>
+          </footer>
+          </div>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD92frZ0yrG5RAMCcgieBh8TPRMmCcasaI&callback=initMap"></script>
+</body>
+
+</html>
