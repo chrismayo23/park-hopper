@@ -1,6 +1,7 @@
 // configure and declare firebase
 var config = {
-    apiKey: "AIzaSyAymzKB2MeA0jYRXxUDR6bYNN0gTqHXX0A",
+    apiKey: "AIzaSyD6uUIiRb9R5yttp7ynOspthZtkdp1ibPc",
+    // apiKey: "AIzaSyAymzKB2MeA0jYRXxUDR6bYNN0gTqHXX0A",
     authDomain: "nphopper-b2f2d.firebaseapp.com",
     databaseURL: "https://nphopper-b2f2d.firebaseio.com",
     projectId: "nphopper-b2f2d",
@@ -146,7 +147,7 @@ function initMap() {
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: stateLat, lng: stateLng },
-            zoom: 6
+            zoom: 5
         });
 
         for (i = 0; i < mapPointsArray.length; i++) {
