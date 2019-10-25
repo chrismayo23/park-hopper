@@ -1,11 +1,12 @@
 // configure and declare firebase
 var config = {
-    apiKey: "AIzaSyAymzKB2MeA0jYRXxUDR6bYNN0gTqHXX0A",
-    authDomain: "nphopper-b2f2d.firebaseapp.com",
-    databaseURL: "https://nphopper-b2f2d.firebaseio.com",
-    projectId: "nphopper-b2f2d",
-    storageBucket: "nphopper-b2f2d.appspot.com",
-    messagingSenderId: "643486232483"
+  apiKey: "AIzaSyD6uUIiRb9R5yttp7ynOspthZtkdp1ibPc",
+  authDomain: "nphopper-b2f2d.firebaseapp.com",
+  databaseURL: "https://nphopper-b2f2d.firebaseio.com",
+  projectId: "nphopper-b2f2d",
+  storageBucket: "nphopper-b2f2d.appspot.com",
+  messagingSenderId: "643486232483",
+  appId: "1:643486232483:web:e2ed6df208a4a290093416"
 };
 firebase.initializeApp(config);
 var database = firebase.database();
